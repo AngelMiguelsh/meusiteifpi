@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha pagina</title>
+    
+</head>
+
+
+
+<style>
+    body{
+        background-color: #5f3737;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    h1{
+        color: rgb(0, 0, 0);
+    }
+
+    li, 
+    p{
+        color: rgba(255, 255, 255, 0.836);
+        font-weight: bold;
+        
+    }
+
+    img{
+        width: 20rem;
+        border-radius: 5rem;
+    }
+
+   input{
+        font-size:  1.4rem;
+        color:  blue;
+        margin-bottom: 1rem;
+    }
+
+    button{
+        font-size: 1.4rem;
+        width:  10rem;
+        border-radius: 10px;
+    }
+
+
+</style>
+
+<body>
+
+    <img src="pq.png" height="100%" width="100%"></>
+    <h1 style="color:white;" align="center">Angelo Miguel,para os íntimos Angelo miguel</h1>
+    <img src="foto.png" height="30%" width="15%" align="left"></>
+    <title>Meu eu em html</title>
+
+
+
+<h1>SOBRE MIM</h1>
+<p>Meu nome é Angelo Miguel, mas tirando os apelidos que meus amigos me chamam, sou mais conhecido como O MIGUEL DOS CURSOS. Porque? porque se tem uma coisa que eu gosto de sair fazendo são cursos, a torta e a direita, pra aumentar a minha gama de conteudo.</p>
+
+<h1>GOSTOS</h1>
+<p>Creio ser uma pessoa muito eclética, afinal para conversar sobre tudo, é preciso saber sobre tudo, nâo é mesmo?!</p>
+
+
+<h1>Minhas linguagens de programação</h1>
+
+<ul>
+    <li>Python</li>
+</ul>
+
+<p>Cheguei meio que de curioso, e a cada dia mais curioso a respeito de tudo!</p>
+
+<h2>Cadastre-se para receber novas musicas</h2>
+<input id="caixa_nome" type="text" placeholder="Digite seu nome aqui" />
+<input id="caixa_email" type="text" placeholder="Digite seu e-mail aqui" />
+<button id="btn_cadastrar">Cadastrar</button>
+
+<script>
+    const comp_btn_cadastrar = document.getElementById('btn_cadastrar');
+      const comp_caixa_nome = document.getElementById('caixa_nome');
+       const comp_caixa_email = document.getElementById('caixa_email');
+
+    comp_btn_cadastrar.onclick = () => { 
+        const nome = comp_caixa_nome.value;
+        const email = comp_caixa_email.value;
+
+        const mensagem = "Olá " + nome +  " obrigado por cadastrar seu email: "+ email + " - logo irá receber novos conteúdos. Abraços!!"
+        alert(mensagem);
+};
+
+  
+</script>
+</body>
+</html>
